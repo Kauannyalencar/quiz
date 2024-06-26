@@ -103,7 +103,7 @@ const showResult = () => {
     resultScreen.style.display = "block"
     resultScreen.querySelector(".correct").textContent = `Correct answers: ${correct}`
     resultScreen.querySelector(".wrong").textContent = `Wrong answers: ${wrong}`
-    resultScreen.querySelector(".score").textContent = `Score: ${correct * 10}`
+    resultScreen.querySelector(".score").textContent = `Score: ${(correct - wrong) * 10}`
 }
 
 play.addEventListener("click", () => {
